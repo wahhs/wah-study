@@ -1,5 +1,5 @@
 module.exports = {
-    title: '. H . S .',
+    title: 'Wah',
     description: 'Just playing',
     host: 'localhost',
     port: '2323',
@@ -8,7 +8,13 @@ module.exports = {
         searchMaxSuggestions: 10,
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'VuePress', link: '/markvue/' },
+            { 
+                text: 'Devlops', 
+                items: [
+                    {text: 'vuepress', link: '/markvue/'}
+                ] 
+            
+            },
             { text: 'External', link: 'https://google.com' },
         ],
         sidebar: {
