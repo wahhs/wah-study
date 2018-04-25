@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>. H . S . | 安裝</title>
+    <meta name="description" content="Just playing">
+    
+    
+    <link rel="preload" href="/assets/css/3.styles.261025c1.css" as="style"><link rel="preload" href="/assets/js/app.b92e1251.js" as="script"><link rel="preload" href="/assets/js/0.c57edba2.js" as="script"><link rel="prefetch" href="/assets/js/1.a337a032.js"><link rel="prefetch" href="/assets/js/2.12820761.js">
+    <link rel="stylesheet" href="/assets/css/3.styles.261025c1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      . H . S .
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/markvue/" class="nav-link router-link-active">VuePres</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/markvue/" class="nav-link router-link-active">VuePres</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>安裝</span><!----></p><ul class="sidebar-group-items"><li><a href="/markvue/install.html#全局安装" class="sidebar-link">全局安装</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/markvue/install.html#現有項目安裝" class="sidebar-link">現有項目安裝</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="安裝"><a href="#安裝" aria-hidden="true" class="header-anchor">#</a> 安裝</h1><h2 id="全局安装"><a href="#全局安装" aria-hidden="true" class="header-anchor">#</a> 全局安装</h2><p>如果你只是想尝试一下 VuePress，你可以全局安装它：</p><pre class="language-bash"><code><span class="token comment"># 安装</span>
+yarn global add vuepress <span class="token comment"># 或者：npm install -g vuepress</span>
+
+<span class="token comment"># 新建一个 markdown 文件</span>
+<span class="token keyword">echo</span> <span class="token string">&quot;# Hello VuePress!&quot;</span> <span class="token operator">&gt;</span> README.md
+
+<span class="token comment"># 开始写作</span>
+vuepress dev <span class="token keyword">.</span>
+
+<span class="token comment"># 构建静态文件</span>
+vuepress build 
+</code></pre><h2 id="現有項目安裝"><a href="#現有項目安裝" aria-hidden="true" class="header-anchor">#</a> 現有項目安裝</h2><p>如果你想在一个现有项目中使用 VuePress，同时想要在该项目中管理文档，则应该将 VuePress 安装为本地依赖。作为本地依赖安装让你可以使用持续集成工具，或者一些其他服务（比如 Netlify）来帮助你在每次提交代码时自动部署。</p><pre class="language-bash"><code><span class="token comment"># 将 VuePress 作为一个本地依赖安装</span>
+yarn add -D vuepress <span class="token comment"># 或者：npm install -D vuepress</span>
+
+<span class="token comment"># 新建一个 docs 文件夹</span>
+<span class="token function">mkdir</span> docs
+
+<span class="token comment"># 新建一个 markdown 文件</span>
+<span class="token keyword">echo</span> <span class="token string">&quot;# Hello VuePress!&quot;</span> <span class="token operator">&gt;</span> docs/README.md
+
+<span class="token comment"># 开始写作</span>
+npx vuepress dev docs
+</code></pre><p>接着，在 package.json 里加一些脚本:</p><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!----><!----></div></div></div>
+    <script src="/assets/js/0.c57edba2.js" defer></script><script src="/assets/js/app.b92e1251.js" defer></script>
+  </body>
+</html>
