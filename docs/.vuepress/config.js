@@ -6,22 +6,25 @@ module.exports = {
     themeConfig: {
         search: true,
         searchMaxSuggestions: 10,
+        
+        
+        // 顶部导航栏
         nav: [
             { text: 'Home', link: '/' },
-            { 
-                text: 'Devlops', 
+            { text: 'Devlops', 
                 items: [
                     {text: 'vuepress', link: '/markvue/'}
                 ] 
-            
             },
             { text: 'External', link: 'https://google.com' },
         ],
+        
+        // 侧栏分级
         sidebar: {
             '/markvue/': [
                 '',     /* /foo/ */
                 'install',  /* /foo/one.html */
-                //'two'   /* /foo/two.html */
+                'theme'   /* /foo/two.html */
             ],
 
             // '/bar/': [
