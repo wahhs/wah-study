@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wah | 默认主题使用</title>
+    <meta name="description" content="Just playing">
+    
+    
+    <link rel="preload" href="/assets/css/6.styles.2e7e8a10.css" as="style"><link rel="preload" href="/assets/js/app.6d2ef42b.js" as="script"><link rel="preload" href="/assets/js/0.3726c669.js" as="script"><link rel="prefetch" href="/assets/js/1.1dc2e868.js"><link rel="prefetch" href="/assets/js/2.952c76bf.js"><link rel="prefetch" href="/assets/js/3.d7d0c562.js"><link rel="prefetch" href="/assets/js/4.c90aed10.js"><link rel="prefetch" href="/assets/js/5.4749dd23.js">
+    <link rel="stylesheet" href="/assets/css/6.styles.2e7e8a10.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      Wah
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Devlops</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/markvue/" class="nav-link router-link-active">vuepress</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Devlops</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="/markvue/" class="nav-link router-link-active">vuepress</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link">External</a></div><!----></nav><ul class="sidebar-links"><li><a href="/markvue/" class="sidebar-link">Vuepress</a></li><li><a href="/markvue/install.html" class="sidebar-link">安裝</a></li><li><a href="/markvue/theme.html" class="active sidebar-link">默认主题使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markvue/theme.html#home-page" class="sidebar-link">Home Page</a></li><li class="sidebar-sub-header"><a href="/markvue/theme.html#顶部导航栏" class="sidebar-link">顶部导航栏</a></li></ul></li></ul></div><div class="page"><div class="content"><h1 id="默认主题使用"><a href="#默认主题使用" aria-hidden="true" class="header-anchor">#</a> 默认主题使用</h1><h2 id="home-page"><a href="#home-page" aria-hidden="true" class="header-anchor">#</a> Home Page</h2><p>默认的主题提供了一个首页（Homepage）的布局 (用于 这个网站的主页)。想要使用它，需要在你的根级 README.md 的 YAML front matter 指定 home: true。以下是这个网站实际使用的数据：</p><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">home</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">heroImage</span><span class="token punctuation">:</span> /hero.png
+<span class="token key atrule">actionText</span><span class="token punctuation">:</span> 快速上手 →
+<span class="token key atrule">actionLink</span><span class="token punctuation">:</span> /zh/guide/
+<span class="token key atrule">features</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 简洁至上
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Vue驱动
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 高性能
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+<span class="token key atrule">footer</span><span class="token punctuation">:</span> MIT Licensed <span class="token punctuation">|</span> Copyright © 2018<span class="token punctuation">-</span>present Evan You
+<span class="token punctuation">---</span>
+</code></pre><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>heroImage: /hero.png 需要放在 <strong>docs/.vuepress/public</strong> 目录下</p></div><h2 id="顶部导航栏"><a href="#顶部导航栏" aria-hidden="true" class="header-anchor">#</a> 顶部导航栏</h2><p>配置文件 <strong>.vuepress/config.js</strong>,
+通过themeConfig.nav增加链接, 当导航键不只是单一的<code>Link</code>是,可通过<code>items</code>添加目录,它将以<code>下拉列表</code>:</p><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Devlops'</span><span class="token punctuation">,</span> 
+                items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>text<span class="token punctuation">:</span> <span class="token string">'vuepress'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/markvue/'</span><span class="token punctuation">}</span>
+                <span class="token punctuation">]</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'External'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://google.com'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/markvue/install.html" class="prev">
+          安裝
+        </a></span><!----></p></div></div></div></div>
+    <script src="/assets/js/0.3726c669.js" defer></script><script src="/assets/js/app.6d2ef42b.js" defer></script>
+  </body>
+</html>
