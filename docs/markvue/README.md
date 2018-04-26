@@ -17,10 +17,3 @@ brew install yarn
 # IF you has npm
 npm install --global yarn
 ```
-
-
-
-
-
-
-
