@@ -16,6 +16,11 @@ module.exports = {
                     {text: 'vuepress', link: '/markvue/'}
                 ] 
             },
+            { text: 'Network',
+                items: [
+                    {text: 'Network', link:'/network/'}
+                ]    
+            },
             { text: 'External', link: 'https://google.com' },
         ],
         
@@ -25,6 +30,11 @@ module.exports = {
                 '',     /* /foo/ */
                 'install',  /* /foo/one.html */
                 'theme'   /* /foo/two.html */
+            ],
+            '/network/':[
+                '',
+                'osi',
+                'tuopu'
             ],
 
             // '/bar/': [
