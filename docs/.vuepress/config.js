@@ -7,7 +7,10 @@ module.exports = {
         search: true,
         searchMaxSuggestions: 10,
         
-        
+        // head: [
+        //     ['link', { rel: 'icon', href: `/logo.png` }]
+        //   ],
+
         // 顶部导航栏
         nav: [
             { text: 'Home', link: '/' },
