@@ -16,12 +16,14 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Devlops', 
                 items: [
-                    {text: 'vuepress', link: '/markvue/'}
+                    {text: 'vuepress', link: '/markvue/'},
+                    {text: 'JavaScript', link: '/javas/'},
+                
                 ] 
             },
             { text: 'Network',
                 items: [
-                    {text: 'Network', link:'/network/'}
+                    {text: 'Network', link:'/network/'},
                 ]    
             },
             { text: 'External', link: 'https://google.com' },
@@ -38,6 +40,10 @@ module.exports = {
                 '',
                 'osi',
                 'tuopu'
+            ],
+            '/javas/':[
+                '',
+                'basic'
             ],
 
             // '/bar/': [
